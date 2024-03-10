@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유효성 검사</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="we.js"></script>
+</head>
+<body>
+    <h1>회원가입</h1>
+
+<!--  section으로 해도 되려나?  -->
+    <section>
+        <label>아이디</label>
+        <input type="text" id="username">
+        <div class = "failure-message hide">아이디는 네 글자 이상이여야 합니다.</div>
+        <div class = "success-message hide">사용할 수 있는 아이디입니다.</div>
+    </section>
+
+    <section>
+        <label>비밀번호</label>
+        <input class="input-password" type="password">
+    </section>
+<!--  section  -->
+
+    <section>
+        <label>비밀번호 확인</label>
+        <input class="input-password" type="password">
+        <div class = "password-not-equal-message hide">비밀번호가 일치하지 않습니다.</div>
+        <div class = "password-equal-message hide">사용 가능한 비밀번호입니다.</div>
+    </section>
+
+    <section>
+        <button>회원가입</button>
+    </section>
+
+</body>
+</html>
